@@ -1,0 +1,11 @@
+name: bert-base-cased
+class_name: BertForMaskedLM
+tokenizer_class: BertTokenizerFast
+tokenizer_name: bert-base-cased
+inner_params:
+- bert.encoder.layer.9.intermediate.dense.weight
+- bert.encoder.layer.9.output.dense.weight
+- bert.encoder.layer.10.intermediate.dense.weight
+- bert.encoder.layer.10.output.dense.weight
+- bert.encoder.layer.11.intermediate.dense.weight
+- bert.encoder.layer.11.output.dense.weight

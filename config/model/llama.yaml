@@ -1,0 +1,14 @@
+name:  meta-llama/Llama-2-7b
+class_name: LlamaForCausalLM
+tokenizer_class: LlamaTokenizer
+tokenizer_name: meta-llama/Llama-2-7b
+inner_params:
+- model.layers.29.mlp.gate_proj.weight
+- model.layers.29.mlp.up_proj.weight
+- model.layers.29.mlp.down_proj.weight
+- model.layers.30.mlp.gate_proj.weight
+- model.layers.30.mlp.up_proj.weight
+- model.layers.30.mlp.down_proj.weight
+- model.layers.31.mlp.gate_proj.weight
+- model.layers.31.mlp.up_proj.weight
+- model.layers.31.mlp.down_proj.weight

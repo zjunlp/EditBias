@@ -1,0 +1,6 @@
+# @package _global_
+
+task: debias
+dataset: stereoset
+cbase: 1.0
+save_path: /newdisk3/data/xxu/mend2/edited_roberta

@@ -1,0 +1,6 @@
+# @package _global_
+
+task: debias
+dataset: stereoset
+cbase: 1.0
+save_path: /mnt/16t/xxu/mend-bias/edited_albert

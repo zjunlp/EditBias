@@ -1,0 +1,62 @@
+alg: enn
+lr: 1e-8
+edit_lr: 1e-8
+seed: 0
+debug: False
+model_save_pt: 50
+edit_bs: 1
+silent: False
+max_iters: 100000
+log_interval: 10
+val_interval: 50
+lr_lr: 1e-8
+batch_size: 2
+val_batch_size: 5
+accumulate_bs: 10
+cedit: 1.5
+cloc: 0.5
+cbase: 1.0
+val_steps: 50
+device: cuda
+base_loss: distill
+oracle: False
+train: True
+train_base: True
+opt: Adam
+single_batch: False
+archive: null
+grad_clip: 100.
+ref: null
+early_stop_patience: 2
+early_stop_key: "loss/total_edit_val"
+dropout: 0.0
+tokenizer: null
+results_dir: null
+no_grad_layers: null
+eval_only: False
+half: False
+save: False
+val_set: /mnt/16t/xxu/mend-bias/data/stereoset/test.json
+
+model:
+  pt: null
+
+data:
+  path: null
+  rephrase: false
+  zsre_nq: true
+  nq_path: ${hydra:runtime.cwd}/data/nq
+  wiki_webtext: true
+  n_edits: 1
+
+eval:
+  verbose: True
+  log_interval: 5
+  final_eval: True
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f${uuid:}}
+  sweep:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f}
+    subdir: ${hydra.job.num}
