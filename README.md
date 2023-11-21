@@ -1,5 +1,5 @@
 # EditBias: Debiasing Language Models via Model Editing
-If you run into any issues with the code, you can open an issue and/or email me at `xxucs@zju.edu.cn`
+
 
 ## Setup
 
