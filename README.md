@@ -42,7 +42,7 @@ If this code or paper was useful, please consider using the following citation:
 
     @article{xinxu2023EditBias,
         title={EditBias: Debiasing Language Models via Model Editing},
-        author={Xin Xu, Wei Xu},
+        author={Xin Xu, Wei Xu, Ningyu Zhang},
         year={2023},
         url={https://github.com/xxupiano/EditBias}
     }
