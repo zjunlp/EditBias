@@ -404,7 +404,7 @@ class EditTrainer(BaseTrainer):
         os.makedirs(self.save_path, exist_ok=True)
         start_time = time.time()
         for val_step in tqdm(range(steps), desc="Validation"):
-6            _, _, _, _, info_dict = self.edit_step(next(val_edit_gen), training=False)
+            _, _, _, _, info_dict = self.edit_step(next(val_edit_gen), training=False)
             averager.add(info_dict)
             pickle.dump(info_dict, open(f"{self.save_path}/val_log_{val_step}.pk", "wb"))
             print(f"One batch validation completes. Save in {self.save_path}/val_log_{val_step}.pk")
