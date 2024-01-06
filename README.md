@@ -46,3 +46,6 @@ If this code or paper was useful, please consider using the following citation:
         year={2023},
         url={https://github.com/xxupiano/EditBias}
     }
+
+
+For more model editing methods, please try [EasyEdit](https://github.com/zjunlp/EasyEdit)!
