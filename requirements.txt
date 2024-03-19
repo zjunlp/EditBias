@@ -1,0 +1,12 @@
+hydra-core==1.3.2
+numpy
+torch==1.12.1
+git+https://github.com/eric-mitchell/higher@master # For in-place functional models
+transformers==4.33.1
+datasets
+wandb
+pandas
+matplotlib
+tqdm
+scikit-learn
+scipy
