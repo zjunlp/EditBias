@@ -1,0 +1,49 @@
+seed: 0
+ifloc: True
+debug: False
+model_save_pt: 50
+edit_bs: 1
+silent: False
+max_iters: 100000
+log_interval: 1
+val_interval: 2
+batch_size: 64
+val_batch_size: 64
+accumulate_bs: 1
+cedit: 1.0
+cloc: 1.0
+val_steps: 50
+device: cuda
+oracle: False
+train: True
+train_base: True
+opt: Adam
+archive: null
+grad_clip: 100.
+ref: null
+early_stop_patience: 10
+early_stop_key: "loss/total_edit_val"
+dropout: 0.0
+tokenizer: null
+results_dir: null
+no_grad_layers: null
+eval_only: False
+half: False
+save: False
+val_set: test.csv
+
+model:
+  pt: null
+
+
+eval:
+  verbose: True
+  log_interval: 2
+  final_eval: True
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f${uuid:}}
+  sweep:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f}
+    subdir: ${hydra.job.num}

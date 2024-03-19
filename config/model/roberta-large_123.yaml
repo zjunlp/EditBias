@@ -1,0 +1,11 @@
+name: roberta-large
+class_name: RobertaForMaskedLM
+tokenizer_class: RobertaTokenizerFast
+tokenizer_name: roberta-large
+inner_params:
+- roberta.encoder.layer.0.intermediate.dense.weight
+- roberta.encoder.layer.0.output.dense.weight
+- roberta.encoder.layer.1.intermediate.dense.weight
+- roberta.encoder.layer.1.output.dense.weight
+- roberta.encoder.layer.2.intermediate.dense.weight
+- roberta.encoder.layer.2.output.dense.weight
